@@ -1,0 +1,57 @@
+<!-- 하위 선택자 -->
+<!-- /*
+        첫번째 태그 한칸 뛰고 두번째 태그 첫번째 태그 찾고 그 안의 모든 두번째 태그에 적용(깊이가 몇단개로 들어가든 상관없이)
+        */ -->
+
+<!-- /*         
+        자식선택자 그 바로 자식의 ul 에만 적용
+        */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+        /* <!-- 하위 선택자  */
+        -->section ul {
+
+            border:
+                1px dotted black;
+            font-size:
+                14px;
+        }
+
+        /* 
+        section>ul {
+        border:
+        1px
+        dotted
+        black;
+        font-size:
+        14px;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>p</p>
+        <ul>
+            <li>
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+
+                </ul>
+            </li>
+            <li>c</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
