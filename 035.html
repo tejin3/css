@@ -13,7 +13,7 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
             box-sizing: border-box;
@@ -31,38 +31,46 @@
             border: 1px solid black;
         } */
 
-        header div {
+        /* header div {
             float: left;
 
-        }
+        } */
 
         /* 사진과 이름 네이게이션등을 한줄에 넣기 위해 */
 
-        main div {
+        /* main div {
             float: left;
 
-        }
+        } */
 
         /* 자기소개와 정보를 한줄에 넣기위해 */
 
-        footer div {
+        /* footer div {
             float: left;
-        }
+        } */
 
         /* 인플로이먼트와 전문기술을 한줄에 넣기위해 */
 
-        header {
+        /* body {
             display: flex;
-            width: 100%;
+            flex-wrap: wrap;
+        } */
+
+        header {
+            /* display: block; */
+            display: flex;
+            flex-wrap: wrap;
             height: 237px;
+            border: 1px solid black;
+            /* flex-wrap: wrap; */
         }
 
         /* 헤더부분 공간지정 */
 
         .d1 {
-            width: 25%;
+            flex: 25%;
             height: 237px;
-            /* display: block; */
+            /* display: flex; */
             text-align: center;
             background-color: gainsboro;
 
@@ -71,9 +79,9 @@
         /* 사진부분 공간정의 */
 
         .d2 {
-            width: 75%;
+            flex: 75%;
             height: 200px;
-            /* display: block; */
+            /* display: flex; */
 
         }
 
@@ -104,10 +112,12 @@
 
 
         nav {
-            width: 100%;
+            /* width: 100%; */
             height: 48px;
             text-align: center;
             font-size: 24px;
+            display: flex;
+            flex-wrap: wrap;
 
 
         }
@@ -115,12 +125,11 @@
         /* 네비게이션 공간정의 */
 
         nav div {
-            width: 16%;
+            flex: 16%;
             height: 89px;
             padding: 15px 30px;
             border: 1px solid black;
             text-align: center;
-
         }
 
 
@@ -173,14 +182,16 @@
         }
 
         .main1 {
-            width: 100%;
+            /* width: 100%; */
             height: 300px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         /* 메인 전체 공간지정 */
 
         .d3 {
-            width: 70%;
+            flex: 70%;
             height: 300px;
             background-color: gainsboro;
             padding: 20px 15px;
@@ -189,6 +200,7 @@
         /* 자기소개 공간지정 */
 
         .d3 div {
+            float: left;
             width: 33.3%;
         }
 
@@ -196,7 +208,7 @@
 
         .d4 {
             background-color: gray;
-            width: 30%;
+            flex: 30%;
             height: 300px;
         }
 
@@ -214,14 +226,16 @@
         }
 
         footer {
-            width: 100%;
+            /* width: 100%; */
             height: 200px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         /* 풋터부분 공간지정 */
 
         .d5 {
-            width: 30%;
+            flex: 30%;
             height: 200px;
             background-color: purple;
             padding: 20px;
@@ -231,7 +245,7 @@
         /* 임플로이먼트 공간지정 */
 
         .d6 {
-            width: 70%;
+            flex: 70%;
             height: 200px;
             background-color: royalblue;
             padding: 20px;
@@ -251,6 +265,9 @@
 </head>
 
 <body>
+    <div style="background-color: chartreuse;">
+        <h1 style="text-align: center;">Resume</h1>
+    </div>
     <header class="head">
 
         <div class="d1">
@@ -294,7 +311,7 @@
         </div>
 
     </header>
-    <main class="main1">
+    <div class="main1">
         <div class="d3">
 
             <div>
@@ -391,7 +408,7 @@
             </TAble>
             <br>
         </div>
-    </main>
+    </div>
 
     <footer>
         <div class="d5">
