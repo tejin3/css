@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <title>Resume</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -18,41 +19,184 @@
             box-sizing: border-box;
             margin: 0%;
             border-collapse: collapse;
-
         }
 
-        .head * {
+        /* 전체 기본 스타일 정의 */
+
+        /* .head * {
             border: 1px solid black;
-        }
+        } */
 
         header div {
             float: left;
+
         }
+
+        /* 사진과 이름 네이게이션등을 한줄에 넣기 위해 */
 
         main div {
             float: left;
+
         }
 
-
+        /* 자기소개와 정보를 한줄에 넣기위해 */
 
         footer div {
             float: left;
         }
 
+        /* 인플로이먼트와 전문기술을 한줄에 넣기위해 */
+
         header {
             display: flex;
+            width: 100%;
+            height: 237px;
+        }
 
+        /* 헤더부분 공간지정 */
+
+        .d1 {
+            width: 20%;
+            height: 237px;
+            display: block;
+            text-align: center;
+            background-color: gainsboro;
 
         }
 
+        /* 사진부분 공간정의 */
+
+        .d2 {
+            width: 80%;
+            height: 200px;
+            display: block;
+
+        }
+
+        /* 이름부분 공간정의 */
+
+        .d2 h1 {
+            background-color: rgb(75, 72, 66);
+            padding: 20px 5px;
+            color: white;
+        }
+
+        /* 이름 부분 */
+
+        .d2 h3 {
+            background-color: rgb(53, 47, 53);
+            padding: 20px 5px;
+            color: white;
+        }
+
+        /* 사용기술 부분 */
+
+        .img1 {
+            height: 100%;
+            width: auto;
+        }
+
+        /* 본인 사진 부분 */
+
+
+        nav {
+            width: 100%;
+            height: 48px;
+            text-align: center;
+            font-size: 34px;
+
+        }
+
+        /* 네비게이션 공간기정 */
+
         .he_a {
             float: left;
-            padding: 0px 31px;
+            padding: 0px 44px;
+            margin-left: 1px;
+        }
+
+        /* 네이게이션 링크부분 */
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 하이퍼링크 밑줄 삭제 */
+
+        i {
+            width: 50px;
+            height: auto;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* 메인 전체 공간지정 */
+
+        .d3 {
+            width: 70%;
+            height: 300px;
+            background-color: gainsboro;
+            padding: 20px 15px;
+        }
+
+        /* 자기소개 공간지정 */
+
+        .d3 div {
+            width: 33.3%;
+        }
+
+        /* 자기소개 공간 내 공간나눔 */
+
+        .d4 {
+            background-color: gray;
+            width: 30%;
+            height: 300px;
+        }
+
+        /* 퍼스널인포 공간지정 */
+
+
+
+        .t1 {
+            width: 70%;
         }
 
         th {
             text-align: left;
             padding: 7px;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* 풋터부분 공간지정 */
+
+        .d5 {
+            width: 30%;
+            height: 200px;
+            background-color: purple;
+            padding: 20px;
+            color: white;
+        }
+
+        /* 임플로이먼트 공간지정 */
+
+        .d6 {
+            width: 70%;
+            height: 200px;
+            background-color: royalblue;
+            padding: 20px;
+        }
+
+        /* 전문기술 공간지정 */
+
+        .table2 {
+            width: 90%;
         }
 
         .table2 th {
@@ -63,35 +207,46 @@
 </head>
 
 <body>
-    <header class="head" style="width: 100%; height: 200px;">
+    <header class="head">
 
-        <div style="width: 30%;height:200px;display:block;text-align: center; background-color: gainsboro;">
-            <img src="https://blog.hmgjournal.com/images_n/contents/170421_dog01.png" style="height: 100%; width: auto;"
-                alt="장태진">
+        <div class="d1">
+            <img class="img1" src="https://blog.hmgjournal.com/images_n/contents/170421_dog01.png" alt="장태진">
         </div>
 
 
-        <div style="width: 70%; height:200px;display:block;">
-            <h1 style="background-color: rgb(75, 72, 66); padding: 20px 5px;color: white;"><i
-                    class="fab fa-accusoft"></i>장태진</h1>
-            <h3 style="background-color: rgb(53, 47, 53); padding: 20px 5px;color: white;">Html / CSS / Java Script
-            </h3>
-            <nav style="width: 100%; height: 48px; text-align: center; font-size: 34px;">
-                <a class="he_a" href="" style="background-color: rgb(0, 255, 242); color: white;">Home</a>
-                <a class="he_a" href="" style="background-color: rgb(0, 89, 255); color: white;">Resume</a>
-                <a class="he_a" href="" style="background-color: rgb(225, 0, 255);color: white;">Portfolio</a>
-                <a class="he_a" href="" style="background-color: rgb(255, 136, 0);color: white;">Contacts</a>
-                <a class="he_a" href="" style="background-color: red;color: white;">Feedback</a>
+        <div class="d2">
+            <h1>장태진</h1>
+            <h3>Html / CSS / Java Script</h3>
+            <nav>
+
+                <a class="he_a" href="" style="background-color: rgb(0, 255, 242); color: white;">
+                    <i class="fas fa-home"></i>
+                    <br>Home</a>
+                <a class="he_a" href="" style="background-color: rgb(0, 89, 255); color: white;">
+                    <i class="fas fa-user-graduate"></i>
+                    <br>Resume</a>
+                <a class="he_a" href="" style="background-color: rgb(225, 0, 255);color: white;">
+                    <i class="fas fa-suitcase"></i>
+                    <br>Portfolio</a>
+                <a class="he_a" href="" style="background-color: rgb(255, 136, 0);color: white;">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <br>Contacts</a>
+                <a class="he_a" href="" style="background-color: red;color: white;">
+                    <i class="fas fa-headset"></i>
+                    <br>Feedback</a>
                 <a class="he_a" href="https://github.com/tejin3" target="_blank"
-                    style="background-color: rgb(255, 230, 0);color: white;">Github</a>
+                    style="background-color: rgb(255, 230, 0);color: white;">
+                    <i class="fab fa-github"></i>
+                    <br>Github</a>
+
             </nav>
         </div>
 
     </header>
-    <main style="width: 100%; height: 300px;" class="main1">
-        <div style="width: 70%; height: 300px; background-color: gainsboro; padding: 20px 15px;">
+    <main class="main1">
+        <div class="d3">
 
-            <div style="width: 33.3%;">
+            <div>
                 <h3>자기소개</h5>
                     <h5>
                         123
@@ -102,7 +257,7 @@
                     <p>...</p>
             </div>
 
-            <div style="width: 33.3%;">
+            <div>
                 <h3>자기소개</h5>
                     <h5>
                         123
@@ -113,7 +268,7 @@
                     <p>...</p>
             </div>
 
-            <div style="width: 33.3%;">
+            <div>
                 <h3>자기소개</h5>
                     <h5>
                         123
@@ -127,11 +282,11 @@
 
         </div>
 
-        <div style="background-color: gray; width: 30%; height: 300px;">
+        <div class="d4">
 
             <br>
             <br>
-            <TAble style="width: 70%;">
+            <TAble class="t1">
                 <tr>
                     <th colspan="2">
                         PERSONAL INFO
@@ -187,8 +342,8 @@
         </div>
     </main>
 
-    <footer style="width: 100%; height: 200px;">
-        <div style="width: 30%; height: 200px; background-color: purple; padding: 20px; color: white;">
+    <footer>
+        <div class="d5">
             <h5>Employment</h5>
             <br>
             <ul>
@@ -201,10 +356,10 @@
 
         </div>
 
-        <div style="width: 70%; height: 200px; background-color: royalblue; padding: 20px;">
+        <div class="d6">
             <h3>PROFESSIONAL SKILLS</h5>
                 <br>
-                <TAble style="width: 90%;" class="table2">
+                <TAble class="table2">
                     <TR>
                         <th>html</th>
                         <td style="background-color:white; text-align: center;">100%</td>
